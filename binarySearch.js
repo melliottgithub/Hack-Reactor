@@ -19,24 +19,21 @@
 // * If you don't find the value, you can return null.
 // * If at any point you calculate the index of the midpoint and get a fractional number, just round it down ("floor" it).
 //310
-function binarySearch(arr, n){
-  //cut array in half
-  let firstHalf = arr.slice(0, arr.length / 2 + 1 )
-  //console.log(firstHalf)
-  // console.log(firstHalf[firstHalf.length -1])
-  //check if middle is more than n
-  firstHalf[firstHalf.length - 1] < n
-  console.log(firstHalf[firstHalf.length - 1])
-  //if mid > b use first half else use second half
-  let secHalf = arr.slice( arr.length / 2 + 1, arr.length)
-  console.log(secHalf)
-  // check middle if n = middle return
-  //firstHalf[firstHalf.length -1] > n
-  console.log(secHalf[secHalf.length - 1] )
-  return 
-  let newArr2 = firstHalf.slice( firstHalf.length /2, firstHalf.length)
-  for (i = 0; i < arr.length / 2; i++){
-    //console.log(arr)
+function binarySearch(arr, n) {
+  let firstHalf = 0
+  let secondHalf = arr.length - 1
+
+  while (firstHalf <= secondHalf) {
+    
   }
+  let firstHalf = arr.slice(0, arr.length / 2 + 1)
+  firstHalf[firstHalf.length - 1] < n
+  let secHalf = arr.slice(arr.length / 2 + 1, arr.length)
+  let middle = secHalf[Math.floor(secHalf.length / 2)]
+  secHalf[middle] === n 
+  firstHalf = secHalf.slice(0, secHalf.length / 2 )
+  Number(firstHalf) === n
+
+ arr[31]
 }
-console.log(binarySearch([1, 3, 16, 22, 31, 33, 34],33))
+console.log(binarySearch([1, 3, 16, 22, 31, 33, 34], 31))
