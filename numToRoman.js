@@ -17,10 +17,10 @@ function numToRoman(num,data) {
     }
   //helper functions
   data = reverseObjects(data)
-  for (let i in data) {
-      while ( num >= data[i] ) {
-        roman += i;
-        num -= data[i];
+  for (let romanNum in data) {
+      while ( num >= data[romanNum] ) {
+        roman += romanNum;
+        num -= data[romanNum];
       }
     }
   return `' ${roman} ' ===> Number: ${number}`;
@@ -38,7 +38,7 @@ function reverseObjects(data){
   return dataReverse
 }
 
-console.log("\nRoman:", numToRoman(100, data))   // ' C '
+console.log("\nRoman:", numToRoman(10000, data))   // ' C '
 console.log("\nRoman:", numToRoman(20, data))   // ' XX '
 console.log("\nRoman:", numToRoman(2020, data)) // ' MMXX '
 console.log("\nRoman:", numToRoman(1999, data)) // ' MCMXCIX '
