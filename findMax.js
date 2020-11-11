@@ -5,7 +5,8 @@ function findMaxRepeatCountInWord(word) {
   // Break up individual words into individual letters.
     let wordToArr = word.split('')
     console.log(wordToArr)
-    let obj= {}
+    let obj = {}
+    let letter = ''
   // Count the instances of each letter
     for (let i = 0; i < wordToArr.length; i++){
         if (obj[wordToArr[i]] === undefined) {
@@ -52,7 +53,7 @@ function findFirstWordWithMostRepeatedChars(text) {
     console.log(wordWithMaxRepeatCount)
   return wordWithMaxRepeatCount;
 }
-let a ='Hello Lazy'
+let a = 'I passed my exam are you not entertained'
 console.log(findFirstWordWithMostRepeatedChars(a))
 console.log(findMaxRepeatCountInWord(a))
 // ASSERTION FUNCTION(S) TO BE USED
