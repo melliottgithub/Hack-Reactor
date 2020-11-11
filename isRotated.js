@@ -5,7 +5,6 @@ function isRotated(str1, str2) {
     console.log(str2)
     console.log(splitted)
   for(i = 0; i < splitted.length; i = i + 4){
-    splitted.shift()
     
   }
 }
