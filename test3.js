@@ -35,7 +35,7 @@ let data = [
             { productId: 4098, name: 'Marker', quantity: 5, unitPrice: 4.50 }]
     }
 ];
-)
+
 
 function impl(data) {
     let ordersByDay = { MONDAY: 0, TUESDAY: 0, WEDNESDAY: 0, THURSDAY: 0, FRIDAY: 0, SATURDAY: 0, SUNDAY: 0 }
